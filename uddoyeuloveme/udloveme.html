@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <h1>Do you love me?</h1>
+
+        <button id="yes" onclick="y()" onmouseover="mouseover1()" onmouseout="mouseout1()">Yes</button>
+        <button id="no" onmouseover="n()" style="position:absolute " >No</button>
+
+
+<script>
+    function mouseover1() {
+        document.getElementById('yes').style.color = 'red'
+    }
+    function mouseout1() {
+        document.getElementById('yes').style.color = 'black'
+    }
+    function y() {
+        alert('I love you too <3')
+    }
+
+
+    function n(){
+        var a = Math.round(Math.random() * window.innerWidth);
+        var b = Math.round(Math.random() * window.innerHeight);
+       document.getElementById('no').style.left = a + 'px';
+        document.getElementById('no').style.top = b + 'px';
+    }
+</script>
+</body>
+</html>
